@@ -21,6 +21,10 @@ public class Environment {
         this.camera = new Camera(new Location(new DimensionalPoint(0, 0, -10)), 5, new int[]{height, width});
     }
 
+    public void moveCamera(Location location) {
+        this.camera.setLocation(location);
+    }
+
     public void addModel(String file) {
         this.models.add(new Model(file));
     }

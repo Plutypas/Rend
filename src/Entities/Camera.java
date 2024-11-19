@@ -22,4 +22,8 @@ public class Camera {
     public DimensionalPoint getLocation() {
         return this.location.getLocation();
     }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
 }
